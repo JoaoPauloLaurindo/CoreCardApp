@@ -4,4 +4,4 @@ Projeto de aplicativo para cartão de crédito, onde o usuário poderá entrar n
 
 ## Getting Started
 
-- [Protótipo](https://www.behance.net/gallery/148943493/Core-Credit-card-Mobile-App-Design)
+- [Protótipo(Behance) - Débora Gonzales e Mateo Silva](https://www.behance.net/gallery/148943493/Core-Credit-card-Mobile-App-Design)
