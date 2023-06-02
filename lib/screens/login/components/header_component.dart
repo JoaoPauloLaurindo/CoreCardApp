@@ -1,4 +1,5 @@
 import 'package:corecard/themes/theme_colors.dart';
+import 'package:corecard/widgets/customClipper/custom_clipper_background.dart';
 import 'package:flutter/material.dart';
 
 class HeaderLogin extends StatelessWidget {
@@ -6,18 +7,14 @@ class HeaderLogin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Stack(
       children: [
-        Expanded(
+        ClipPath(
+          clipper: CustomClipperBackground(),
           child: Container(
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(50),
-                bottomRight: Radius.circular(50),
-              ),
-              color: ThemeColors.secundaryColor,
-            ),
+            width: double.infinity,
             height: 280,
+            color: ThemeColors.secundaryColor,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Column(

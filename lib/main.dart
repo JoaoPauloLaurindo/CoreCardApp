@@ -13,6 +13,7 @@ class Corecard extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Corecard',
+      debugShowCheckedModeBanner: false,
       theme: CoreTheme,
       home: const Login(),
     );
