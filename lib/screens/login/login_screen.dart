@@ -1,3 +1,4 @@
+import 'package:corecard/screens/login/components/form_login_component.dart';
 import 'package:corecard/screens/login/components/header_component.dart';
 import 'package:corecard/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +14,7 @@ class Login extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           HeaderLogin(),
+          FormLogin(),
         ],
       ),
     );

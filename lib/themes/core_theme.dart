@@ -11,11 +11,11 @@ ThemeData CoreTheme = ThemeData(
       fontSize: 16,
     ),
     bodyLarge: TextStyle(
-      fontSize: 28,
+      fontSize: 36,
       fontWeight: FontWeight.bold,
     ),
     titleMedium: TextStyle(
-      fontSize: 20,
+      fontSize: 24,
       fontWeight: FontWeight.normal,
     ),
   ),
