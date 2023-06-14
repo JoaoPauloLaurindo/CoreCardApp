@@ -1,3 +1,4 @@
+import 'package:corecard/screens/recover/recover_screen.dart';
 import 'package:corecard/themes/theme_colors.dart';
 import 'package:corecard/widgets/forms/inputs/text_input.dart';
 import 'package:flutter/material.dart';
@@ -55,20 +56,29 @@ class _FormLoginState extends State<FormLogin> {
                   ),
                 ],
               ),
-              const Padding(
-                padding: EdgeInsets.only(right: 8.0),
-                child: Text(
-                  'Recuperar senha',
-                  style: TextStyle(
-                    color: ThemeColors.secundaryColor,
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: InkWell(
+                  child: const Text(
+                    'Recuperar senha',
+                    style: TextStyle(
+                      color: ThemeColors.secundaryColor,
+                    ),
                   ),
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const RecoverScreen(),
+                      ),
+                    );
+                  },
                 ),
               ),
             ],
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Container(
+            child: SizedBox(
               width: double.infinity,
               child: ElevatedButton(
                   onPressed: () {},
@@ -78,20 +88,25 @@ class _FormLoginState extends State<FormLogin> {
                   )),
             ),
           ),
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
+              const Text(
                 'Não tem uma conta? ',
                 style: TextStyle(color: ThemeColors.secundaryColor),
               ),
-              Text(
-                'Registre-se',
-                style: TextStyle(
-                  color: ThemeColors.secundaryColor,
-                  fontWeight: FontWeight.bold,
+              InkWell(
+                child: const Text(
+                  'Registre-se',
+                  style: TextStyle(
+                    color: ThemeColors.secundaryColor,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-              )
+                onTap: () {
+                  print('Clicou!');
+                },
+              ),
             ],
           ),
         ],

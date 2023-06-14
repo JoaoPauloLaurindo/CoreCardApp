@@ -18,5 +18,9 @@ ThemeData CoreTheme = ThemeData(
       fontSize: 24,
       fontWeight: FontWeight.normal,
     ),
+    bodySmall: TextStyle(
+      fontSize: 16,
+      color: ThemeColors.secundaryColor,
+    ),
   ),
 );

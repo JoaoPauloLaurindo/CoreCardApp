@@ -23,7 +23,7 @@ class TextInput extends StatelessWidget {
         children: [
           Text(
             labelText,
-            style: TextStyle(
+            style: const TextStyle(
               color: ThemeColors.secundaryColor,
             ),
           ),

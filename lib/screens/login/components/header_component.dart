@@ -1,6 +1,5 @@
 import 'package:corecard/themes/theme_colors.dart';
 import 'package:corecard/widgets/customClipper/custom_clipper_background.dart';
-import 'package:corecard/widgets/forms/inputs/text_input.dart';
 import 'package:flutter/material.dart';
 
 class HeaderLogin extends StatelessWidget {
