@@ -1,4 +1,5 @@
 import 'package:corecard/screens/recover/recover_screen.dart';
+import 'package:corecard/screens/register/register_screen.dart';
 import 'package:corecard/themes/theme_colors.dart';
 import 'package:corecard/widgets/forms/inputs/text_input.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,7 @@ class _FormLoginState extends State<FormLogin> {
             icon: Icons.email,
           ),
           const TextInput(
-            labelText: "Password",
+            labelText: "Senha",
             isPassword: true,
             icon: Icons.lock_outline_rounded,
           ),
@@ -104,7 +105,11 @@ class _FormLoginState extends State<FormLogin> {
                   ),
                 ),
                 onTap: () {
-                  print('Clicou!');
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const RegisterScreen(),
+                    ),
+                  );
                 },
               ),
             ],

@@ -1,5 +1,6 @@
 import 'package:corecard/themes/theme_colors.dart';
 import 'package:corecard/widgets/forms/inputs/text_input.dart';
+import 'package:corecard/widgets/header/text_header_component.dart';
 import 'package:flutter/material.dart';
 
 class RecoverScreen extends StatelessWidget {
@@ -15,60 +16,20 @@ class RecoverScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 24.0,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      top: 24.0,
-                      left: 8.0,
-                    ),
-                    child: InkWell(
-                      child: const Icon(
-                        Icons.arrow_back_outlined,
-                        color: ThemeColors.secundaryColor,
-                        size: 28,
-                      ),
-                      onTap: () {
-                        Navigator.pop(context);
-                      },
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      top: 24.0,
-                      left: 8.0,
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text(
-                          'Recuperar senha',
-                          style: TextStyle(
-                            color: ThemeColors.secundaryColor,
-                            fontSize: 36,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Text(
-                          'Insira o email para recuperar a sua senha',
-                          style: Theme.of(context).textTheme.bodySmall,
-                        ),
-                      ],
-                    ),
-                  ),
-                  const TextInput(
-                    labelText: "",
-                    keyboard: TextInputType.emailAddress,
-                    icon: Icons.email,
-                  ),
-                ],
-              ),
+            const Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                TextHeader(
+                  h1: 'Recuperar senha',
+                  h2: 'Insira o email para recuperar a sua senha',
+                ),
+                TextInput(
+                  labelText: "",
+                  keyboard: TextInputType.emailAddress,
+                  icon: Icons.email,
+                ),
+              ],
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
