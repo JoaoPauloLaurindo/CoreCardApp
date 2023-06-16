@@ -1,6 +1,7 @@
 import 'package:corecard/screens/recover/recover_screen.dart';
 import 'package:corecard/screens/register/register_screen.dart';
 import 'package:corecard/themes/theme_colors.dart';
+import 'package:corecard/widgets/buttons/primary_button_component.dart';
 import 'package:corecard/widgets/forms/inputs/text_input.dart';
 import 'package:flutter/material.dart';
 
@@ -81,12 +82,10 @@ class _FormLoginState extends State<FormLogin> {
             padding: const EdgeInsets.all(8.0),
             child: SizedBox(
               width: double.infinity,
-              child: ElevatedButton(
-                  onPressed: () {},
-                  child: Text(
-                    'Entrar',
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  )),
+              child: PrimaryButton(
+                onPress: () {},
+                titleButton: 'Entrar',
+              ),
             ),
           ),
           Row(

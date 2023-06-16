@@ -1,4 +1,5 @@
 import 'package:corecard/themes/theme_colors.dart';
+import 'package:corecard/widgets/buttons/primary_button_component.dart';
 import 'package:corecard/widgets/forms/inputs/text_input.dart';
 import 'package:corecard/widgets/header/text_header_component.dart';
 import 'package:flutter/material.dart';
@@ -33,24 +34,11 @@ class RecoverScreen extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                  style: ButtonStyle(
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                      RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                    ),
-                  ),
-                  child: Text(
-                    'Recuperar',
-                    style: Theme.of(context).textTheme.bodyMedium,
-                  ),
-                ),
+              child: PrimaryButton(
+                titleButton: 'Recuperar',
+                onPress: () {
+                  Navigator.pop(context);
+                },
               ),
             ),
           ],
