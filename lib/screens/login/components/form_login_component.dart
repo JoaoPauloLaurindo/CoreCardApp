@@ -1,3 +1,4 @@
+import 'package:corecard/screens/home/home_screen.dart';
 import 'package:corecard/screens/recover/recover_screen.dart';
 import 'package:corecard/screens/register/register_screen.dart';
 import 'package:corecard/themes/theme_colors.dart';
@@ -83,7 +84,13 @@ class _FormLoginState extends State<FormLogin> {
             child: SizedBox(
               width: double.infinity,
               child: PrimaryButton(
-                onPress: () {},
+                onPress: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => HomeScreen(),
+                    ),
+                  );
+                },
                 titleButton: 'Entrar',
               ),
             ),
