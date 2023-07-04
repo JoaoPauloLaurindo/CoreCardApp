@@ -20,7 +20,6 @@ ThemeData CoreTheme = ThemeData(
     ),
     bodySmall: TextStyle(
       fontSize: 16,
-      color: ThemeColors.secundaryColor,
     ),
   ),
 );

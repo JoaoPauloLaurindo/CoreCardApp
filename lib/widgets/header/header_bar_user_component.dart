@@ -17,16 +17,20 @@ class HeaderBarUserComponent extends StatelessWidget {
         color: ThemeColors.secundaryColor,
         child: const Padding(
           padding: EdgeInsets.only(
-            left: 8.0,
+            left: 16.0,
+            right: 16.0,
             top: 28.0,
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              UserComponent(),
-              ActionsComponent(),
-            ],
+          child: Padding(
+            padding: EdgeInsets.only(bottom: 28.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                UserComponent(),
+                ActionsComponent(),
+              ],
+            ),
           ),
         ),
       ),
